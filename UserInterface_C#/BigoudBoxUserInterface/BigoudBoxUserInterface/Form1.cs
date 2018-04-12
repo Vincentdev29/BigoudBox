@@ -16,5 +16,17 @@ namespace BigoudBoxUserInterface
         {
             InitializeComponent();
         }
+
+        private void Quit_Button_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Quitter l'application?", "Message de confirmation", MessageBoxButtons.OKCancel) == DialogResult.No)
+            {
+
+            }
+            else
+            {
+                Close();
+            }
+        }
     }
 }
